@@ -1,0 +1,147 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #404549; /* Fondo claro para un contraste suave */
+}
+
+.sidebar {
+    width: 12.5%;
+    background-color: #343a40; /* Fondo oscuro para la barra lateral */
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #fff;
+    overflow-y: auto;
+}
+
+.sidebar h4 {
+    color: #ffc107; /* Texto dorado para un contraste elegante con el fondo oscuro */
+}
+
+.sidebar .nav-link {
+    display: block;
+    color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease; /* Transición suave para hover */
+}
+
+.sidebar .nav-link.active, .sidebar .nav-link:hover {
+    background-color: #ccc931; /* Fondo azul para el hover y el estado activo */
+    color: #ffffff;
+}
+
+.content {
+    margin-left: 15%;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #423b3b; /* Fondo blanco para el contenido */
+}
+
+.card {
+    background-color: #ffffff; /* Fondo blanco para las tarjetas */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: calc(30% - 20px); /* Ajusta el ancho según sea necesario */
+    height: 350px; /* Ajusta la altura para acomodar el icono */
+    display: inline-block;
+    vertical-align: top;
+    text-align: center; /* Centra el texto y los elementos en la tarjeta */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card img {
+    width: 210px; /* Ancho de la imagen */
+    height: 210px; /* Alto de la imagen */
+    object-fit: contain; /* Asegura que la imagen no se distorsione */
+    margin-bottom: 10px; /* Espacio debajo de la imagen */
+}
+
+.card-title {
+    font-size: 1.25em;
+    margin-bottom: 10px;
+    color: #343a40; /* Texto oscuro para títulos */
+}
+
+.card-text {
+    margin-bottom: 15px;
+    color: #6c757d; /* Texto gris para un tono más suave */
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #323538;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #c4a139;
+}
+
+.btn-danger {
+    display: inline-block;
+    padding: 10px 15px; /* Ajuste del padding para mayor consistencia */
+    color: #dc3545; /* Texto rojo para el botón de peligro */
+    background-color: #f8d7da; /* Fondo rosado para indicar peligro */
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Fondo rojo oscuro para hover */
+}
+
+.btn-success {
+    display: inline-block;
+    padding: 10px 15px; /* Ajuste del padding para mayor consistencia */
+    color: #28a745; /* Texto verde para el botón de éxito */
+    background-color: #d4edda; /* Fondo verde claro para indicar éxito */
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #218838; /* Fondo verde oscuro para hover */
+}
+
+.margin-button {
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 40%;
+        height: auto;
+        position: relative;
+    }
+    .content {
+        margin-left: 0;
+        padding-top: 0;
+    }
+    .card {
+        width: calc(100% - 20px);
+        height: 300px; /* Ajusta la altura para la vista móvil */
+    }
+}

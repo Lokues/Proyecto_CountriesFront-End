@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Countries/Cities Management">
+    <meta name="author" content="Alejandro Villanueva">
+    <title>Agregar Usuario</title>
+    <link rel="stylesheet" href="css/style_add.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="card add">
+        <div class="card-body">
+          <h5 class="card-title">AGREGAR USUARIO</h5>
+          <div class="form-group mt-4">
+            <label for="new-nameuser">Usuario</label>
+            <input type="text" class="form-control" id="new-nameuser">
+          </div>
+          <div class="form-group mt-4">
+            <label for="new-password">Contraseña</label>
+            <input type="text" class="form-control" id="new-password" >
+          </div>
+          <div class="form-group mt-4">
+            <label for="confirm-password">Confirmar Contraseña</label>
+            <input type="text" class="form-control" id="confirm-password">
+          </div>
+          
+          <div class="form-group mt-3 ml-4">
+            <button type="button" class="btn btn-primary" 
+                onclick="registerUser()">Agregar</button>
+          </div>
+          
+        </div>
+    </div>
+    <script src="js/createUserScript.js"></script>
+
+</body>
+</html>

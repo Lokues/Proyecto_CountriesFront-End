@@ -1,0 +1,67 @@
+/* Contenedor general */
+.card.add {
+    background-color: #495057;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* Estilo del cuerpo de la tarjeta */
+.card-body {
+    padding: 20px;
+}
+
+/* Título de la tarjeta */
+.card-title {
+    color: #ffc107;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Etiquetas de formulario */
+.form-group label {
+    color: #f8f9fa;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Campos de entrada del formulario */
+.form-control {
+    background-color: #343a40;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-control:focus {
+    background-color: #495057;
+    box-shadow: none;
+    border-color: #6c757d;
+}
+
+/* Botón de agregar */
+.btn-primary {
+    background-color: #ffc107;
+    color: #343a40;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #e0a800;
+    color: #fff;
+}
