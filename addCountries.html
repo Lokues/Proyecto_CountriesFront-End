@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Countries/Cities Management">
+    <meta name="author" content="Alejandro Villanueva">
+    <title>Agregar Paises</title>
+    <link rel="stylesheet" href="css/style_add.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="card add">
+        <div class="card-body">
+          <h5 class="card-title">AGREGAR PAIS</h5>
+          <div class="form-group mt-4">
+            <label for="input-name">Nombre del País</label>
+            <input type="text" class="form-control" id="input-name">
+          </div>
+          <div class="form-group mt-4">
+            <label for="input-capital">Capital</label>
+            <input type="text" class="form-control" id="input-capital" >
+          </div>
+          <div class="form-group mt-4">
+            <label for="input-population">Población</label>
+            <input type="text" class="form-control" id="input-population">
+          </div>
+          <div class="form-group mt-4">
+            <label for="input-language">Idioma</label>
+            <input type="text" class="form-control" id="input-language">
+          </div>
+          <div class="form-group mt-4">
+            <label for="input-currency">Moneda</label>
+            <input type="text" class="form-control" id="input-currency" >
+          </div>
+          <div class="form-group mt-4">
+            <label for="input-area">Área</label>
+            <input type="text" class="form-control" id="input-area">
+          </div>
+          <div class="form-group mt-3 ml-4">
+            <button type="button" class="btn btn-primary" 
+                onclick="addCountries()">Agregar</button>
+          </div>
+          
+        </div>
+    </div>
+    <script src="js/addCountries.js"></script>
+
+</body>
+</html>
